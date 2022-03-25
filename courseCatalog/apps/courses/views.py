@@ -12,9 +12,10 @@ class courseListView(generics.ListAPIView):
 	serializer_class = courseListSerializer
 	queryset = Course.objects.all()
 
-	
 
 
 class courseDetailView(generics.RetrieveUpdateDestroyAPIView):
 	serializer_class = courseDetailSerializer
 	queryset = Course.objects.all()	
+
+
